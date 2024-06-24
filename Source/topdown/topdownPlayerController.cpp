@@ -11,6 +11,7 @@
 #include "InputActionValue.h"
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
+#include "Blueprint/UserWidget.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -65,6 +66,30 @@ void AtopdownPlayerController::OnInputStarted()
 	StopMovement();
 }
 
+void AtopdownPlayerController::PauseGameWithMenu()
+{
+	bShowMouseCursor = true;
+	if (PauseMenuClass != nullptr && PauseMenu == nullptr)
+	{
+		PauseMenu = CreateWidget<UUserWidget>(this, PauseMenuClass);
+	}
+	if (PauseMenu != nullptr)
+	{
+		// what should we do based on the pause state *before* we toggle it
+		if (IsPaused())
+		{
+			PauseMenu->RemoveFromParent();
+			SetInputMode(FInputModeGameAndUI());
+		}
+		else
+		{
+			PauseMenu->AddToViewport();
+			SetInputMode(FInputModeGameAndUI());
+		}
+	} 
+	SetPause(!IsPaused());
+
+}
 // Triggered every frame when the input is held down
 void AtopdownPlayerController::OnSetDestinationTriggered()
 {

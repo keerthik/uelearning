@@ -1,18 +1,18 @@
 {
     "configurations": [
         {
-            "name": "topdownEditor Editor Win64 Development (topdown)",
+            "name": "Topdown Custom Win64 Development (topdown)",
             "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
             "compileCommands": "D:\\01_dev\\04_playground\\unreal\\topdown\\.vscode\\compileCommands_topdown.json",
             "includePath": [ 
-                "${workspaceFolder}\\Intermediate\\**",
-                "${workspaceFolder}\\Plugins\\**",
-                "${workspaceFolder}\\Source\\**"
-            ],
-			"defines": [ 
+				"${workspaceFolder}\\Intermediate\\**", 
+				"${workspaceFolder}\\Plugins\\**", 
+				"${workspaceFolder}\\Source\\**" 
+			],
+            "defines": [ 
 				"UNICODE", 
 				"_UNICODE", 
 				"__UNREAL__", 

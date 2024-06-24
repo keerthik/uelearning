@@ -42,7 +42,16 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* SetDestinationTouchAction;
 
+	UFUNCTION(BlueprintCallable, Category=Game, meta=(DisplayName = "Toggle pause+menu"))
+    void PauseGameWithMenu();
+
 protected:
+	// The UMG Widget class and instance to use for the pause menu
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<class UUserWidget> PauseMenuClass;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+    UUserWidget* PauseMenu;
 	/** True if the controlled character should navigate to the mouse cursor. */
 	uint32 bMoveToMouseCursor : 1;
 
