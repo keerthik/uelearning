@@ -2,6 +2,7 @@
 .ignore
 .vs/
 .vscode/
+.vsconfig
 *.code-workspace
 
 # Compiled Object files
