@@ -5,6 +5,7 @@ making widget
 - add Canvas panel -> text -> anchor dropdown -> alignment (anchor position rel to size)
 - adding a font, let UE figure it out after placing TTF in folder. works pretty well
 - navigating the UI widget anchor stuff.
+
 adding the menu using blueprint
 - project settings -> Engine/Input -> Action bindings 
 - [deprecated? use Engine/Enhanced Input]
@@ -19,6 +20,7 @@ adding the menu using blueprint
 - similarly, boolean NOT shown only when dragged from bool
 - set IA_Pause Action/Trigger when Paused to true
 - [had to use sequence to get updated pause info?]
+
 adding buttons and functionality
 - grid layout pretty intuitive
 - button defaults and auto-layout intuitive and looks decent
@@ -26,6 +28,7 @@ adding buttons and functionality
 - [accessing button ! IsVariable bool on button details pane can be hidden if too narrow]
 - Switch to widget -> graph view (top right)
 - select button variable -> Add OnClicked event
+
 migrating "verbose" BP functionality to C++
 - used GPT to inform where to add C++ "toggle pause and show menu" functionality
 - [compiling !! needed to add "UMG" to /gamename/.build.cs libs list]

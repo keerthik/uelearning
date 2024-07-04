@@ -19,6 +19,8 @@ I have however been professionally using the Unity engine and programming in C# 
 ### tutorial0: UI and basic Unreal
 [NuMakesGames' Pause Menu](https://www.youtube.com/watch?v=hBGVwOsezi0) part 1. Part 2, customizing keybinds, will be returned to.
 
-### tutorial1: Basic game project
+### tutorial1: official unreal "first game" -- abandoned partway
+
+### tutorial2: Basic game project (asteroids)
 [RGBGuy's Asteroids](https://www.youtube.com/watch?v=vRA9DKV-fd4&list=PLSPtS15mOXMfB488RbiM6QK3CUKut0gZ2) playlist.
 
