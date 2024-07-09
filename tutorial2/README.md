@@ -18,3 +18,7 @@ input
 - BP_pawn has an "event graph" (the actual blueprint)
 - input mappings make more sense on a playercontroller, but can be put on any BP if you add mapping context
 	- [Get PlayerController for player0 -> create Enhanced Input Local Player Subsystem Node -> Add Mapping Context where target is input subsystem interface]
+
+firing a bullet
+- Add a "scene component" to any BP to create an "empty transform"
+- [initial bullet spawn location caused my plane to behave weird and jump around ? trying to spawn bullets within the convex bounds of my plane mesh might have tried to displace the ship to accommodate the bullet]
