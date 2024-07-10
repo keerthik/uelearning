@@ -1,13 +1,13 @@
 # Learning Unreal
 
-This repository contains my journey through various tutorials learning Unreal. 
+This repository contains my journey through various tutorials learning Unreal Engine 5. 
 
 ## How I use this repository
 - Each tutorial project is based on some tutorial content from the internet. I then expand on the tutorial by a small amount to exercise my understanding. 
 
 - If I am learning a lot of new things and doing them while constantly referencing the tutorial, I like to try and practice it one more time, by branching off the initial commit and trying to accomplish everything I learned without referencing the source.
 
-- After I have wrapped up a project, I add my learnings, questions, answers, expansions, and inferences in the project's readme.
+- After I have wrapped up a project, I add my learnings, questions, answers, expansions, and inferences in each project's readme, before merging it all back to `master`.
 
 ## My background
 I come from a programming background, with Unity experience starting around 2011. Initially, my experience was working on hobby games with early Unity versions. I never gained much 3D modeling, animation or texturing experience, I mostly worked with static meshes. I have some, but limited experience with shader programming or shader-graph-like tools.
