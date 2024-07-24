@@ -13,7 +13,7 @@ input
 - tute uses Engine/input, we should use Enhanced Input
 	- [axis mappings "scale" -1 and +1 does not exist !! you need to apply modifier "Negate" on one instance of the action]
 	- created IA for move (axis, confused) and shoot
-![[Pasted image 20240704032427.png]]
+[![input axes docs](inputaxes.png)](https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine#:~:text=Copy%20full%20snippet-,Directional%20Input,-A%20good%20example)
 
 - BP_pawn has an "event graph" (the actual blueprint)
 - input mappings make more sense on a playercontroller, but can be put on any BP if you add mapping context
@@ -22,3 +22,6 @@ input
 firing a bullet
 - Add a "scene component" to any BP to create an "empty transform"
 - [initial bullet spawn location caused my plane to behave weird and jump around ? trying to spawn bullets within the convex bounds of my plane mesh might have tried to displace the ship to accommodate the bullet]
+
+viewport wrapping
+- GameMode BP can be used to return viewport X and Y.
