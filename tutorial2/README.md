@@ -24,4 +24,31 @@ firing a bullet
 - [initial bullet spawn location caused my plane to behave weird and jump around ? trying to spawn bullets within the convex bounds of my plane mesh might have tried to displace the ship to accommodate the bullet]
 
 viewport wrapping
-- GameMode BP can be used to return viewport X and Y.
+- GameMode BP can return viewport dimensions [X,Y] (pixels)
+- add tag (eg: `wrap`) to mesh components that need to wrap
+- create a BP component (not an actor)
+	- get owner (parent with this component) 
+	  -> get components by tag -> loop array -> get world location
+	  -> check [X,Y] within viewport bounds -> [-1/1,-1/1]x[X,Y] where out/in bounds in that axis -> set world location to warp
+	- just -1x means will be out of bounds the other way and immediately re-warp. using -.99x fixes
+	- [ viewport dims =/= world position at edges ? viewport in px, but world position in game units. is there a way to get the scale factor between them? what does it depend on? ]
+- attach BP component to BPs with `wrap` meshes
+- [ who determines player camera ? any active camera, if only one ]
+- [ how to get mesh size in world units ? something with mesh bounds + some matrix math ]
+
+ship collision & damage
+- add a new mesh component + dimensions -> set visible false -> disable physics sim -> add component begin overlap event -> cast other actor -> trigger hp tickdown
+- you can just have meshes lying around with no physics/colliders to use as a hacky UI
+
+sfx
+- unreal has a powerful audio management system
+- bfxr is a pretty good arcade sfx tool
+- just throwing some sounds in takes the gamefeel from 10% -> 50% of the way there, but a lot more work to get from 50% -> 80+!
+	- i tried randomizing sounds for the laser, but it doesn't sound great. would be better to have some kind of semi-random but curated pattern, with sounds closer to each other
+	- programmatically, a single sound with (controlled) randomized audio transforms applied could work too.
+
+general
+- bp print can use a "Key" to overwrite existing entry (neat!)
+- tick -> "Is Valid" -> branch/true -> [logic] prevents destroyed object manipulation errors from [logic]
+- go to Edit -> Project Settings -> Maps & Modes -> Default Maps
+- [aligning unreal XY between screen/world is confusing ! unreal uses left-hand-rule, unity uses right-hand-rule]
