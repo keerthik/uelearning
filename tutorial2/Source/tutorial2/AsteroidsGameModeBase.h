@@ -18,7 +18,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Game, meta = (DisplayName = "Determine screen bounds"))
 	void DetermineScreenBounds(UCameraComponent* GameCamera);
 	UFUNCTION(BlueprintCallable, Category = Game, meta = (DisplayName = "Get screen bounds"))
-	FVector2D GetScreenBounds() { return FVector2D(Xbounds, Ybounds); }
+	FVector2D GetScreenBounds(float& X, float& Y);
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
 	float Xbounds;

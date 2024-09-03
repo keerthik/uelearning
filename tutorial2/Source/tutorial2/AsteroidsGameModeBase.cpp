@@ -31,3 +31,10 @@ void AAsteroidsGameModeBase::DetermineScreenBounds(UCameraComponent* GameCamera)
 		Ybounds = OrthoHeight/2;
 	}
 }
+
+FVector2D AAsteroidsGameModeBase::GetScreenBounds(float& X, float& Y)
+{
+    X = Xbounds;
+    Y = Ybounds;
+    return FVector2D(Xbounds, Ybounds);
+}

@@ -16,12 +16,19 @@ class TUTORIAL2_API UACCamWrap : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UACCamWrap();
-protected:	
-	// Called when the game starts
-	virtual void BeginPlay() override;
-public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+	AAsteroidsGameModeBase* GameMode;
 
-		
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+	float wrapX;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+	float wrapY;
+
+	// Called when the game starts
+	virtual void BeginPlay() override;
+private:
+	const FName WrapTag = FName("wrap");
 };
