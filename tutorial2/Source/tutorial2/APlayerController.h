@@ -3,20 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Camera/CameraComponent.h"
-#include "GameFramework/GameModeBase.h"
-#include "AsteroidsGameModeBase.generated.h"
+#include "GameFramework/PlayerController.h"
+#include "APlayerController.generated.h"
 
 /**
- *
+ * 
  */
 UCLASS()
-class TUTORIAL2_API AAsteroidsGameModeBase : public AGameModeBase
+class TUTORIAL2_API AAPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 public:
-	UFUNCTION(BlueprintCallable, Category = Game, meta = (DisplayName = "Determine screen bounds"))
-	void DetermineScreenBounds(UCameraComponent* GameCamera);
 	UFUNCTION(BlueprintCallable, Category = Game, meta = (DisplayName = "Get screen bounds"))
 	FVector2D GetScreenBounds() { return FVector2D(Xbounds, Ybounds); }
 protected:
@@ -24,4 +21,6 @@ protected:
 	float Xbounds;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
 	float Ybounds;
+	
+	virtual void BeginPlay() override;
 };
