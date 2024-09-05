@@ -18,6 +18,13 @@ I come from a programming background, with Unity experience starting around 2011
 
 I have however been professionally using the Unity engine and programming in C# for it extensively since 2012, building a mobile non-game application. A typical AAA-style game programmer would primarily focus on animation logic, multiplayer, or AI behaviours. My experience was mostly gained on platform engineering, general software architecture and UI manipulation.
 
+# Learning metadata
+The `README.md` file within each project folder has most of my learnings accumulated in context of the goals and steps of that tutorial or project.
+
+I also keep a log of general purpose tips and where I learned them from in the `UETips.md` [file](./UETips.md).
+
+I often use AI assisted coding as a shortcut to parsing UE documentation and browsing stack overflow, I found myself using in `cppprompts.md` within each project folder (if applicable). Despite how wrought AI assistance is in every creative pursuit, it has truly made learning a new software framework exponentially simpler.
+
 # Tutorials
 
 ## Covered/ongoing
