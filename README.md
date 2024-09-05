@@ -29,6 +29,13 @@ I have three classes of expansions I try to do, that won't be covered by the tut
 - Migration of complex and unreadable BP graphs into C++ functions, and then refactoring the BP to invoke the C++. This improves my understanding of the engine code API, and intuition for the relationship between C++ & BP.
 - Integration of newly learned concepts into a prior more complex project, to see how to navigate building functionality around an existing codebase.
 
+# Learning metadata
+The `README.md` file within each project folder has most of my learnings accumulated in context of the goals and steps of that tutorial or project.
+
+I also keep a log of general purpose tips and where I learned them from in the `UETips.md` [file](./UETips.md).
+
+I often use AI assisted coding as a shortcut to parsing UE documentation and browsing stack overflow, I found myself using in `cppprompts.md` within each project folder (if applicable). Despite how wrought AI assistance is in every creative pursuit, it has truly made learning a new software framework exponentially simpler.
+
 # Tutorials
 
 These are tutorials I have previewed before starting to work on them. My goal is ordering these is to build out my understanding in the way that let's me get started working on my own game as soon as possible, roughly in this order:

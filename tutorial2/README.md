@@ -47,8 +47,16 @@ sfx
 	- i tried randomizing sounds for the laser, but it doesn't sound great. would be better to have some kind of semi-random but curated pattern, with sounds closer to each other
 	- programmatically, a single sound with (controlled) randomized audio transforms applied could work too.
 
+migrating verbose gameplay logic to C++
+- Tools -> New C++ class, base class to first class you want to extend
+- generate vscode project following docs
+- add the UCLASS tag `Blueprintable` to actor component
+- better than deleting your bp, select your bp and change the baseclass to your new C++ class
+
 general
 - bp print can use a "Key" to overwrite existing entry (neat!)
+- 'format text' bp node cant be set to: {in1}, {in2} = {out3} which will generate in1, in2, out3 pins you can set in bp
 - tick -> "Is Valid" -> branch/true -> [logic] prevents destroyed object manipulation errors from [logic]
 - go to Edit -> Project Settings -> Maps & Modes -> Default Maps
 - [aligning unreal XY between screen/world is confusing ! unreal uses left-hand-rule, unity uses right-hand-rule]
+
