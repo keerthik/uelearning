@@ -54,26 +54,25 @@ Atutorial4Character::Atutorial4Character()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
-void Atutorial4Character::BeginPlay()
-{
-	// Call the base class  
-	Super::BeginPlay();
-}
-
 //////////////////////////////////////////////////////////////////////////
 // Input
 
-void Atutorial4Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void Atutorial4Character::NotifyControllerChanged()
 {
+	Super::NotifyControllerChanged();
+
 	// Add Input Mapping Context
-	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
+	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
 		{
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
-	
+}
+
+void Atutorial4Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
 	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent)) {
 		
