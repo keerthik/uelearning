@@ -66,7 +66,7 @@ void AtopdownPlayerController::OnInputStarted()
 	StopMovement();
 }
 
-void AtopdownPlayerController::PauseGameWithMenu()
+void AtopdownPlayerController::PauseGameWithMenu(TSubclassOf<class UUserWidget> PauseMenuClass)
 {
 	bShowMouseCursor = true;
 	if (PauseMenuClass != nullptr && PauseMenu == nullptr)

@@ -43,12 +43,12 @@ public:
 	UInputAction* SetDestinationTouchAction;
 
 	UFUNCTION(BlueprintCallable, Category=Game, meta=(DisplayName = "Toggle pause+menu"))
-    void PauseGameWithMenu();
+    void PauseGameWithMenu(TSubclassOf<class UUserWidget> PauseMenuClass);
 
 protected:
 	// The UMG Widget class and instance to use for the pause menu
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
-    TSubclassOf<class UUserWidget> PauseMenuClass;
+    // UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    // TSubclassOf<class UUserWidget> PauseMenuClass;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
     UUserWidget* PauseMenu;
