@@ -7,26 +7,27 @@
 
 UUserWidget* UBasicMenuLibrary::PauseGameWithMenu(TSubclassOf<class UUserWidget> PauseMenuClass, APlayerController* playerController, UUserWidget* existingMenu = nullptr)
 {
-	// bShowMouseCursor = true;
 	if (PauseMenuClass != nullptr && existingMenu == nullptr)
 	{
-		// existingMenu = CreateWidget<UUserWidget>(playerController, PauseMenuClass);
+		existingMenu = CreateWidget<UUserWidget>(playerController, PauseMenuClass);
 	}
 	if (existingMenu != nullptr)
 	{
 		// what should we do based on the pause state *before* we toggle it
-		// if (IsPaused())
-		// {
-		// 	PauseMenu->RemoveFromParent();
-		// 	SetInputMode(FInputModeGameAndUI());
-		// }
-		// else
-		// {
-		// 	PauseMenu->AddToViewport();
-		// 	SetInputMode(FInputModeGameAndUI());
-		// }
+		if (playerController->IsPaused())
+		{
+			existingMenu->RemoveFromParent();
+			playerController->SetInputMode(FInputModeGameAndUI());
+		}
+		else
+		{
+			playerController->SetShowMouseCursor(true);
+
+			existingMenu->AddToViewport();
+			playerController->SetInputMode(FInputModeGameAndUI());
+		}
 	} 
-	// SetPause(!IsPaused());
+	playerController->SetPause(!playerController->IsPaused());
     return existingMenu;
 }
 
