@@ -1,4 +1,5 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games,
+// 	Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
@@ -8,6 +9,16 @@ public class tutorial5 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "NavigationSystem", "AIModule", "Niagara", "EnhancedInput" });
+        PublicDependencyModuleNames.AddRange(new string[] { 
+			"BasicMenuRuntime",
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"NavigationSystem",
+			"AIModule",
+			"Niagara",
+			"EnhancedInput" 
+		});
     }
 }
