@@ -66,30 +66,30 @@ void AtopdownPlayerController::OnInputStarted()
 	StopMovement();
 }
 
-void AtopdownPlayerController::PauseGameWithMenu(TSubclassOf<class UUserWidget> PauseMenuClass)
-{
-	bShowMouseCursor = true;
-	if (PauseMenuClass != nullptr && PauseMenu == nullptr)
-	{
-		PauseMenu = CreateWidget<UUserWidget>(this, PauseMenuClass);
-	}
-	if (PauseMenu != nullptr)
-	{
-		// what should we do based on the pause state *before* we toggle it
-		if (IsPaused())
-		{
-			PauseMenu->RemoveFromParent();
-			SetInputMode(FInputModeGameAndUI());
-		}
-		else
-		{
-			PauseMenu->AddToViewport();
-			SetInputMode(FInputModeGameAndUI());
-		}
-	} 
-	SetPause(!IsPaused());
+// void AtopdownPlayerController::PauseGameWithMenu(TSubclassOf<class UUserWidget> PauseMenuClass)
+// {
+// 	bShowMouseCursor = true;
+// 	if (PauseMenuClass != nullptr && PauseMenu == nullptr)
+// 	{
+// 		PauseMenu = CreateWidget<UUserWidget>(this, PauseMenuClass);
+// 	}
+// 	if (PauseMenu != nullptr)
+// 	{
+// 		// what should we do based on the pause state *before* we toggle it
+// 		if (IsPaused())
+// 		{
+// 			PauseMenu->RemoveFromParent();
+// 			SetInputMode(FInputModeGameAndUI());
+// 		}
+// 		else
+// 		{
+// 			PauseMenu->AddToViewport();
+// 			SetInputMode(FInputModeGameAndUI());
+// 		}
+// 	} 
+// 	SetPause(!IsPaused());
+// }
 
-}
 // Triggered every frame when the input is held down
 void AtopdownPlayerController::OnSetDestinationTriggered()
 {

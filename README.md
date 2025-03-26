@@ -65,9 +65,10 @@ These are tutorials I have previewed before starting to work on them. My goal is
 ### tutorial4: Character pipeline
 - [Muller's Character creation UE5 Beginner guide](https://www.youtube.com/watch?v=Z0FCeXkCW4k)
 
+### tutorial5: Plugin system
+- [Cobra Code's BP plugin guide](https://www.youtube.com/watch?v=6IJhL7qfFYk)
+
 ## Planned
-### tutorial5: Object pools
-- [Ali's ObjectPool pattern guide](https://www.youtube.com/watch?v=f797l7YTcgc)
 
 ### Expansion1: Remake Asteroids with tutorial0-4 learnings
 - a 2D pause UI
@@ -76,10 +77,7 @@ These are tutorials I have previewed before starting to work on them. My goal is
 - improve gameplay feedback*
 - bullets and asteroids from an objectpool
 
-### tutorial6: Observer pattern
-- [Ali's Observer pattern guide](https://www.youtube.com/watch?v=YFtLd-bKl-U)
-
-### tutorial7: Advanced audio management guide
+### tutorialX: Advanced audio management guide
 - [still evaluating a good guide]
 
 ### Replay system

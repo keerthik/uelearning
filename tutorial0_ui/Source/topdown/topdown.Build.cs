@@ -9,6 +9,7 @@ public class topdown : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(new string[] { 
+			"BasicMenuRuntime",
 			"Core",
 			"CoreUObject",
 			"Engine",
