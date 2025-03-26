@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BasicMenu",
+	"Description": "Simple menu utilities",
+	"Category": "Game Features",
+	"CreatedBy": "kOrc",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BasicMenuRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"ExplicitlyLoaded": true,
+	"BuiltInInitialFeatureState": "Active"
+}
