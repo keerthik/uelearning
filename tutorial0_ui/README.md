@@ -1,5 +1,7 @@
 ## 240623 Basic UI
 
+Update 250326: this project may be defunct, its functionality moved to tutorial5 using Plugins
+
 making widget
 - new BP -> widget -> user widget
 - add Canvas panel -> text -> anchor dropdown -> alignment (anchor position rel to size)
