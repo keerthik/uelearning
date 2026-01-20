@@ -73,6 +73,10 @@ If there is a [🕜 ?h x ?] row under a tutorial,
 - [Cobra Code's BP plugin guide](https://www.youtube.com/watch?v=6IJhL7qfFYk)
 - 🕜 2-3h
 
+### tutorial6: MASS (ECS) system
+- [Epic's official MASS tutorial](https://dev.epicgames.com/community/learning/talks-and-demos/37Oz/large-numbers-of-entities-with-mass-in-unreal-engine-5)
+- 
+
 ## Planned
 
 ### Expansion1: Remake Asteroids with tutorial0-4 learnings
