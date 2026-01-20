@@ -4,3 +4,6 @@
 #include "Modules/ModuleManager.h"
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, tutorial6, "tutorial6" );
+
+DEFINE_LOG_CATEGORY(Logtutorial6)
+ 

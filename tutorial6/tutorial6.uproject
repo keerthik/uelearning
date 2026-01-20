@@ -19,19 +19,23 @@
 			]
 		},
 		{
-			"Name": "MassAI",
+			"Name": "StateTree",
 			"Enabled": true
 		},
 		{
-			"Name": "MassCrowd",
+			"Name": "GameplayStateTree",
 			"Enabled": true
 		},
 		{
-			"Name": "MassEntity",
+			"Name": "GameFeatures",
 			"Enabled": true
 		},
 		{
-			"Name": "MassGameplay",
+			"Name": "ModularGameplay",
+			"Enabled": true
+		},
+		{
+			"Name": "BasicMenu",
 			"Enabled": true
 		}
 	]
