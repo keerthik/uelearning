@@ -46,6 +46,9 @@ These are tutorials I have previewed before starting to work on them. My goal is
 
 
 ## Covered/ongoing
+If there is a [🕜 ?h x ?] row under a tutorial, 
+
+
 ### tutorial0: UI and basic Unreal
 - [NuMakesGames' Pause Menu](https://www.youtube.com/watch?v=hBGVwOsezi0) part 1. 
 - Part 2, customizing keybinds, will be returned to, as it was made using legacy Input system, not new Enhanced Input.
@@ -61,12 +64,14 @@ These are tutorials I have previewed before starting to work on them. My goal is
 
 ### tutorial3: Save & Load game
 - [Ali's Save & Load guide](https://www.youtube.com/watch?v=H6rqJbwjRIk)
+- 🕜 2-3h x 3
 
 ### tutorial4: Character pipeline
 - [Muller's Character creation UE5 Beginner guide](https://www.youtube.com/watch?v=Z0FCeXkCW4k)
 
 ### tutorial5: Plugin system
 - [Cobra Code's BP plugin guide](https://www.youtube.com/watch?v=6IJhL7qfFYk)
+- 🕜 2-3h
 
 ## Planned
 
