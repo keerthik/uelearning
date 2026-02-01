@@ -39,6 +39,9 @@ void AStrategyHUD::DrawHUD()
 		// draw the selection box
 		if (bDrawBox)
 		{
+			GEngine->AddOnScreenDebugMessage(1, 0.7f, FColor::Green, 
+				FString::Printf(TEXT("Box being dragged: %fx%f (D^2: %f)"), 
+					BoxSize.X, BoxSize.Y, FVector2D::DistSquared(BoxStart, BoxCurrentPosition)));
 			DrawRect(SelectionBoxColor, BoxStart.X, BoxStart.Y, BoxSize.X, BoxSize.Y);
 
 			// get all the units in the selection box
