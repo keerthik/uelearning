@@ -69,7 +69,7 @@ void AStrategyHUD::DrawHUD()
 				if (PC->ProjectWorldLocationToScreen(CurrentUnit->GetActorLocation(), ScreenCoords, true))
 				{
 					// draw a selection string near the unit
-					const FString SelectionString = "Selected";
+					const FString SelectionString = "BOOPED";
 					DrawText(SelectionString, FColor::White, ScreenCoords.X - 25.0f, ScreenCoords.Y + 25.0f, nullptr, 1.5f);
 				}
 			}

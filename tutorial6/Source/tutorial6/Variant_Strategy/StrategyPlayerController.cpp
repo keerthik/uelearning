@@ -201,7 +201,7 @@ void AStrategyPlayerController::SelectHoldTriggered(const FInputActionValue& Val
 	// calculate the size of the selection box
 	FVector2D SelectionSize = SelectionPosition - StartingSelectionPosition;
 
-	bool shouldDraw = SelectionSize.SizeSquared() > 1;
+	bool shouldDraw = SelectionSize.SizeSquared() > 150;
 	// update the selection box on the HUD
 	if (StrategyHUD)
 	{
@@ -212,7 +212,7 @@ void AStrategyPlayerController::SelectHoldTriggered(const FInputActionValue& Val
 		else
 		{
 			GEngine->AddOnScreenDebugMessage(1, 0.7f, FColor::Green, 
-				FString::Printf(TEXT("Box too small. Just selecting")));
+				FString::Printf(TEXT("Box too small (%f). Just selecting"), SelectionSize.SizeSquared()));
 			SelectClick(Value);
 		}
 	}
